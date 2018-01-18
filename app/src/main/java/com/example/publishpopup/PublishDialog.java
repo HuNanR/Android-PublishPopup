@@ -191,8 +191,7 @@ public class PublishDialog extends Dialog {
                 float startX=0f;
                 //结束大小半径 大小为图片对角线的一半
                 float startY= rlRoot.getBottom();
-                Animator animator;
-                animator = ViewAnimationUtils.createCircularReveal(rlRoot, cx, cy, startX, startY);
+                Animator animator = ViewAnimationUtils.createCircularReveal(rlRoot, cx, cy, startX, startY);
                 //在动画开始的地方速率改变比较慢,然后开始加速
                 animator.setInterpolator(new AccelerateInterpolator());
                 animator.setDuration(400);
@@ -214,8 +213,7 @@ public class PublishDialog extends Dialog {
                 float startX=0f;
                 //结束大小半径 大小为图片对角线的一半
                 float startY= rlRoot.getBottom();
-                Animator animator;
-                animator = ViewAnimationUtils.createCircularReveal(rlRoot, cx, cy, startY, startX);;
+                Animator animator = ViewAnimationUtils.createCircularReveal(rlRoot, cx, cy, startY, startX);;
                 //在动画开始的地方速率改变比较慢,然后开始加速
                 animator.setInterpolator(new AccelerateInterpolator());
                 animator.setDuration(400);
